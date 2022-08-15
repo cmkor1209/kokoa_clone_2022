@@ -1,0 +1,56 @@
+#friends-display-link {
+  display: block;
+  text-align: center;
+  background-color: #fafafa;
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-top: 90px;
+  margin-bottom: 10px;
+}
+#friends-display-link i {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.friends-screen {
+  padding: 0px var(--horizontal-space);
+}
+
+.friends-screen__channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen{
+ from {
+  opacity: 1;
+ }
+ to {
+  opacity: 0;
+  /* html은 아직 존재하지만 그저 브라우저가 element를 무시하도록 하는 것일뿐
+  뭔가를 숨기거나 html을 제거하기 위해서는 JS가 필요하다. */
+  visibility: hidden;
+ }
+}
+.splash-screen {
+  background-color: var(--yellow);
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 132px;
+  /* 애니메이션의 마지막 값을 계속 가지고 싶다면 forwards를 사용한다. */
+  animation: hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay: 2s;
+  z-index: 98;
+}

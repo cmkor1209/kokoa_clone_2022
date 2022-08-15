@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 200vh;
+  border: 10px solid #00C6AD;
+}
+
+/* top */
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+.top .fa-solid {
+  position: absolute;
+  left: 50px;
+}
+.top header {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/* playing-music */
+.playing-music {
+  display: flex;
+  margin-bottom: 70px;
+  margin-left: 40px;
+}
+
+.playing-music__album {
+  height: 250px;
+  width: 250px;
+  background-color: #FFBD11;
+  border: 3px solid black;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.playing-music__info {
+  display: flex;
+  flex-direction: column;
+}
+.playing-music__info__title {
+  width: 250px;
+  font-size: 65px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  line-height: 120%;
+}
+.playing-music__info__artist {
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0.8;
+}
+
+
+/* player */
+.music-player {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 40px;
+}
+
+.music-player__playbtn {
+  width: 270px;
+  height: 120px;
+  border: 3px solid black;
+  border-radius: 20px;
+  border-width: 3px 3px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music-player__playbtn span {
+  font-size: 35px;
+  font-weight: 900;
+  margin-left: 20px;
+}
+.music-player__circle {
+  width: 120px;
+  height: 120px;
+  border: 3px solid black;
+  border-radius: 50%;
+  border-width: 3px 3px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* music-list */
+.music-list {
+  display: flex;
+  margin-left: 40px;
+  margin-bottom: 80px;
+}
+
+.music-list__color-box {
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+.music-list__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.music-list__info__title {
+  font-size: 30px;
+  font-weight: 900;
+}
+.music-list__info__artist {
+  font-size: 20px;
+  opacity: 0.7;
+}
+.red {
+  background-color: #F85A2A;
+}
+.pink {
+  background-color: #FF89BB;
+}
+.blue {
+  background-color: #193AAB;
+}
+.green {
+  background-color: #00C6AD;
+}
